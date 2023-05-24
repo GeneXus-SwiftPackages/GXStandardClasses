@@ -27,8 +27,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXStandardClasses",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXStandardClasses-1.0.0-beta+20230519205149.xcframework.zip",
-			checksum: "5690d854d24c1a11e7cae46b1770b7d5287fbfee37dc4f6029add700188e87e9"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXStandardClasses-1.0.0-beta+20230524184838.xcframework.zip",
+			checksum: "a58278444d4da8249c79baf7d5603007e0e6914d2aaae7afd4a0a2663feccf8a"
 		)
 	]
 )
