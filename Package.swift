@@ -19,7 +19,7 @@ let package = Package(
 		.target(name: "GXStandardClassesWrapper",
 				dependencies: [
 					"GXStandardClasses",
-					.product(name: "GXDataLayer", package: "GXDataLayer", condition: .when(platforms: [.watchOS, .tvOS, .iOS])),
+					.product(name: "GXDataLayer", package: "GXDataLayer", condition: .when(platforms: [.iOS, .watchOS, .tvOS])),
 					.product(name: "GXFoundation", package: "GXFoundation", condition: .when(platforms: [.iOS])),
 					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.iOS])),
 					.product(name: "YAJL", package: "YAJL", condition: .when(platforms: [.iOS]))
@@ -27,8 +27,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXStandardClasses",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXStandardClasses-1.0.0-beta+20230525143554.xcframework.zip",
-			checksum: "722edebb629956a4f7dcc365a54fd1ee8c7eaac0e7d6bf978455e304ac5be29f"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXStandardClasses-1.0.0-beta+20230526182522.xcframework.zip",
+			checksum: "e9a6f8a3f78853d0125cff1b6b38fc8524bbcab922859fd46cf76aba64e27e50"
 		)
 	]
 )
