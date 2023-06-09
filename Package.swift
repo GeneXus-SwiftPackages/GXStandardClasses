@@ -10,16 +10,16 @@ let package = Package(
 			targets: ["GXStandardClassesWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", c7f5e1d8ea6bd7e5a780f307eae7a43e471cbfd0),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", 74dde0711a4fa381198959e514e0bb2c76016d09),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", a1e27a7a0817831e5e96518e9434564ef4a7bc97),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/YAJL.git", 1b467c9562bc71d67b84952ce802ff27e0c33b9a)
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", revision: "2b1420b000073afd1f12b87c84c79b5661c4cc0b"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", revision: "195f2873dc3ed7d924d9a72b86f629015eadef71"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", revision: "2850c07662d2291aeb37634ebb5c498d5ad0d6a4"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/YAJL.git", revision: "9c402239ffc52982baa281b75e0e85f29eb1d322")
 	],
 	targets: [
 		.target(name: "GXStandardClassesWrapper",
 				dependencies: [
 					"GXStandardClasses",
-					.product(name: "GXDataLayer", package: "GXDataLayer", condition: .when(platforms: [.iOS, .tvOS, .watchOS])),
+					.product(name: "GXDataLayer", package: "GXDataLayer", condition: .when(platforms: [.watchOS, .tvOS, .iOS])),
 					.product(name: "GXFoundation", package: "GXFoundation", condition: .when(platforms: [.iOS])),
 					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.iOS])),
 					.product(name: "YAJL", package: "YAJL", condition: .when(platforms: [.iOS]))
@@ -27,8 +27,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXStandardClasses",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXStandardClasses-1.0.0-beta+20230608211628.xcframework.zip",
-			checksum: "23fbaf8945e26b8e0389d9c58e89dce64d07f5e4910e7de55a85d8b404a6046d"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXStandardClasses-1.0.0-beta+20230609175617.xcframework.zip",
+			checksum: "55a39180cb5ca2a61d25ada53944c746d42b08b7ef40a931682b742680fd4514"
 		)
 	]
 )
