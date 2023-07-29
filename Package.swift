@@ -10,10 +10,10 @@ let package = Package(
 			targets: ["GXStandardClassesWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", exact: "1.1.0-beta.795"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", exact: "1.1.0-beta.795"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", exact: "1.1.0-beta.795"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/YAJL.git", exact: "1.1.0-beta.795")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", exact: "1.1.0-beta.5"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", exact: "1.1.0-beta.5"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", exact: "1.1.0-beta.5"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/YAJL.git", exact: "1.1.0-beta.5")
 	],
 	targets: [
 		.target(name: "GXStandardClassesWrapper",
@@ -27,8 +27,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXStandardClasses",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXStandardClasses-1.1.0-beta.795.xcframework.zip",
-			checksum: "f08aa7aa4930fd2f8df0800312703b83d10b635ad9fd91e2ddf86d5e9eaeb53a"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXStandardClasses-1.1.0-beta.5.xcframework.zip",
+			checksum: "ad01e6f2525a1abcd8377fa93c58a4a7daf8d40d92926f6a8ff97144333e6e9c"
 		)
 	]
 )
