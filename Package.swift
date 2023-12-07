@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXStandardClassesWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", exact: "1.3.0-beta.11")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", exact: "1.4.0-beta.2")
 	],
 	targets: [
 		.target(name: "GXStandardClassesWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXStandardClasses",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXStandardClasses-1.3.0-beta.11.xcframework.zip",
-			checksum: "8664ea8c17314e67eed22af12d40a4cbae7e830051ec9f7f94892680360858e0"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXStandardClasses-1.4.0-beta.2.xcframework.zip",
+			checksum: "86ad6f47c2b0716a3432766414bf84c111045ffb3ca4058737ac9fb974f94439"
 		)
 	]
 )
