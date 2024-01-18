@@ -3,14 +3,14 @@ import PackageDescription
 
 let package = Package(
 	name: "GXStandardClasses",
-	platforms: [.iOS("12.0"), .watchOS("5.0"), .tvOS("12.0")],
+	platforms: [.iOS("12.0"), .watchOS("9.0"), .tvOS("12.0")],
 	products: [
 		.library(
 			name: "GXStandardClasses",
 			targets: ["GXStandardClassesWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", exact: "1.4.0-rc.10")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", exact: "1.4.0-rc.21")
 	],
 	targets: [
 		.target(name: "GXStandardClassesWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXStandardClasses",
-			url: "https://pkgs.genexus.dev/iOS/preview/GXStandardClasses-1.4.0-rc.10.xcframework.zip",
-			checksum: "1c0c2bd1b4ec59f9276a83278dc0620e45d058efbacfc6481f73079f0be799ae"
+			url: "https://pkgs.genexus.dev/iOS/preview/GXStandardClasses-1.4.0-rc.21.xcframework.zip",
+			checksum: "334876381131511d79329361e7e088b113c19945b7fdbd2f9637e951216e89fc"
 		)
 	]
 )
